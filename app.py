@@ -5,7 +5,7 @@ from flask_migrate import Migrate
 from blueprints.user.models import User
 
 
-
+#Insert into database some initial data
 def insert_initial_data():
     # Insert some initial data if no users exist
     if User.query.count() == 0:
